@@ -1,11 +1,13 @@
 package org.example;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 
 public class Student implements Serializable {
     private String name;
     private int age;
-    private transient double GPA; // средний бал
+    transient private  double GPA;
 
     public Student() {
     }
