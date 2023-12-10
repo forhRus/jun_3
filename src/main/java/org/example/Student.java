@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class Student implements Serializable {
     private String name;
     private int age;
-    transient private  double GPA;
+    private transient double GPA;
 
     public Student() {
     }
@@ -46,7 +46,7 @@ public class Student implements Serializable {
     public int getAge() {
         return age;
     }
-
+@JsonIgnore
     public double getGPA() {
         return GPA;
     }
