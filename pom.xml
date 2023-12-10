@@ -8,6 +8,21 @@
     <artifactId>jun_hm_3</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- Добавляем зависимость для Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.16.0</version>
+        </dependency>
+        <!-- Поддержка xml-сериализатора -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.16.0</version>
+        </dependency>
+    </dependencies>
+
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
